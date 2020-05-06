@@ -36,7 +36,7 @@ void ChangeSize(GLsizei w, GLsizei h) {
     h = 1;
   
   // set viewport to display dimention
-  glViewport(0, 0, w, h);
+  glViewport(w/3, h/3, w/2, h/2);
   
   // reset coordinate system
   glMatrixMode(GL_PROJECTION);
