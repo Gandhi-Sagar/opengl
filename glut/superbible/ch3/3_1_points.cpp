@@ -12,7 +12,7 @@
 GLfloat xRot = 0.0f;
 GLfloat yRot = 0.0f;
 GLfloat xRotStep = 2.0f;
-GLfloat yRotStep = 3.0f;
+GLfloat yRotStep = 3.0f;	
 
 // thid function does any needed initialization on the rendering context
 void SetupRC(void) {
@@ -32,7 +32,7 @@ void RenderScene(void) {
   // Save the matrix state and do the rotation
   glPushMatrix();
   glRotatef(xRot, 1.0f, 0.0f, 0.0f);
-  glRotatef(50, 0.0f, 1.0f, 0.0f);
+  glRotatef(yRot, 0.0f, 1.0f, 0.0f);
   
   // call only once for rendering all remaining points
   glBegin(GL_POINTS);
