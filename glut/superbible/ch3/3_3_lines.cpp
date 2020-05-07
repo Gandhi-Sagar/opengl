@@ -64,6 +64,8 @@ void ChangeSize(GLsizei w, GLsizei h) {
 
   glMatrixMode(GL_MODELVIEW);
   glLoadIdentity();
+  
+  glutPostRedisplay();
 }
 
 void TimerFunction(int value) {
