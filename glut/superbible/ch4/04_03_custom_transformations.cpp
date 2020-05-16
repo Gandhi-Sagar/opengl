@@ -3,7 +3,7 @@
  * code for transformation. But, it is also important to finish the book.
  * I promise myself, that in next 3 months, I will know how to perform
  * transformations myself.
- * This is combination of 4th and 5th exercise in the 4th chapter of opengl
+ * This is combination of 3rd and 4th exercise in the 4th chapter of opengl
  * superbible 4th edition.
  * Sagar Gandhi | 15/05/2020
 */
@@ -32,7 +32,7 @@ void RenderScene(void) {
   transformationMatrix[14] = -100.0f;
   
   glLoadMatrixf(transformationMatrix);
-  glutWireTorus(2.0f, 8.0f, 30, 50);
+  glutWireTorus(2.0f, 8.0f, 40, 20);
   
   glutSwapBuffers();
 }
