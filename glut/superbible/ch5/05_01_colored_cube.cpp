@@ -5,7 +5,7 @@
 
 #include <GL/glut.h>
 
-GLfloat xRot = 0.0f, yRot = 0.0f;
+GLfloat xRot = 0.0f, yRot = 0.0f, zTrv = -5.0f;
 
 
 void SetupRC(void) {
@@ -23,7 +23,7 @@ void RenderScene(void) {
   glMatrixMode(GL_MODELVIEW);
   glLoadIdentity();
   
-  glTranslatef(0.0f, 0.0f, -5.0f);
+  glTranslatef(0.0f, 0.0f, zTrv);
   glRotatef(xRot, 1.0f, 0.0f, 0.0f);
   glRotatef(yRot, 0.0f, 1.0f, 0.0f);
   
@@ -107,15 +107,15 @@ void TimerFunction(int value) {
 
 void SpecialKeys(int key, int x, int y) {
   if (key == GLUT_KEY_UP) {
-	xRot += 1.0f;
-	if (xRot > 360.0)
-	  xRot = 0.0f;
+	zTrv += 0.1f;
+	if (zTrv > 2.0)
+	  zTrv = 2.0f;
   }
 
   if (key == GLUT_KEY_DOWN) {
-	xRot -= 1.0f;
-    if (xRot < 0.0f)
-	  xRot = 360.0f;
+	zTrv -= 1.0f;
+	if (zTrv < -100.0f)
+	  zTrv = -100.0f;
   }
   
   if (key == GLUT_KEY_LEFT) {
