@@ -182,7 +182,7 @@ void SpecialKeys(int key, int x, int y) {
 
 
 void ChangeSize(GLsizei w, GLsizei h) {
-  GLfloat lightPos[] = {1.0f, 0.3f, -1.4f, 1.0f};
+  GLfloat lightPos[] = {0.0f, 1.5f, -1.2f, 1.0f};
   
   if (h == 0)
     h = 1;
