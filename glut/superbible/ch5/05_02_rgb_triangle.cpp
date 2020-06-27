@@ -1,5 +1,6 @@
 /* Demonstrates smoothly shaded colored triangle 
  * (This is usually called "hello, world" program in the arena of rendering
+ * and is a second exercise in the 5th chapter of opengl superbible 4th ed.
  * Sagar Gandhi | 19/05/2020
  */
  

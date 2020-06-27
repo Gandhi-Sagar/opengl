@@ -35,7 +35,7 @@ void SetupLights(void) {
   
   // specific spot effects 
   // cut-off angle is 60 degrees
-  glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 60.0f);
+  glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 25.0f);
   glEnable(GL_LIGHT0);
   
   glEnable(GL_COLOR_MATERIAL);
@@ -89,13 +89,13 @@ void RenderScene(void) {
   glPopMatrix();
   
   // set material color and draw sphere in the middle
-  glColor3f(0.0f, 0.0f, 1.0f);
+  glColor3f(0.1f, 0.1f, 0.1f);
   if (iTess == MODE_VERYLOW)
     glutSolidSphere(30.0f, 7, 7);
   else if (iTess == MODE_MEDIUM)
     glutSolidSphere(30.0f, 15, 15);
   else if (iTess == MODE_VERYHIGH)
-    glutSolidSphere(30.0f, 50, 50);
+    glutSolidSphere(30.0f, 50, 150);
     
   glutSwapBuffers();
 }

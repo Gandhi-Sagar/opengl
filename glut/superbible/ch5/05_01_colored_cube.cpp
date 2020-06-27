@@ -7,7 +7,6 @@
 
 GLfloat xRot = 0.0f, yRot = 0.0f, zTrv = -5.0f;
 
-
 void SetupRC(void) {
   glClearColor(0.3f, 0.3f, 0.3f, 1.0f);
   glPolygonMode(GL_FRONT_AND_BACK, GL_SMOOTH);

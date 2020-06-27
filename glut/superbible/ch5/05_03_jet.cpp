@@ -26,7 +26,7 @@ void RenderScene(void) {
   glRotatef(xRot, 1.0f, 0.0f, 0.0f);
   glRotatef(yRot, 0.0f, 1.0f, 0.0f);
   glBegin(GL_TRIANGLES);
-    //nose
+  //nose
 	glColor3f(1.0f, 1.0f, 1.0f);
 	glVertex3f(0.0f, 0.0f, 0.6f);
 	glVertex3f(-0.15f, 0.0f, 0.3f);
